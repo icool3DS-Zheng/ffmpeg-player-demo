@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 生成活动文件",
+			"command": "D:\\MinGW\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-L", 
+				"${fileDirname}",
+				"-l", 
+				"SDL2",
+				"-l", 
+				"avcodec-59",
+				"-l", 
+				"avdevice-59",
+				"-l", 
+				"avformat-59",
+				"-l", 
+				"avutil-57",
+				"-l", 
+				"swscale-6",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "编译器: D:\\MinGW\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
